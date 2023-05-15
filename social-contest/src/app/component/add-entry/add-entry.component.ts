@@ -19,7 +19,7 @@ export class AddEntryComponent implements OnInit{
   subject_name?: string;
   description?: string;
   
-  url: string = 'https://img.icons8.com/ios/100/000000/contract-job.png';
+  url: string = 'https://via.placeholder.com/500x300.png?text=upload-image';
   validator_text: string = "";
   showAddEntry?: boolean;
   subscription?: Subscription;
@@ -78,14 +78,14 @@ export class AddEntryComponent implements OnInit{
 
     // form resets
 
-    this.subject_name = "";
+    this.submitter_name = "";
     this.email = "";
     this.phone_number = "";
     this.upload_photo = "";
     this.subject_name = "";
     this.description = "";
 
-    this.url = 'https://img.icons8.com/ios/100/000000/contract-job.png';
+    this.url = 'https://via.placeholder.com/500x300.png?text=upload-image';
 
   }
 

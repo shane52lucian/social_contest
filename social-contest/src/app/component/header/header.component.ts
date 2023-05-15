@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit{
   entries: Entry[] = [];
   title: string = 'Mothers Day Contest'; 
-  showAddEntry?: boolean = true;
+  showAddEntry?: boolean = false;
   subscription?: Subscription;
 
   constructor(private entryService: EntryService, private uiService: UiService, private router: Router) {
