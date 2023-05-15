@@ -1,0 +1,21 @@
+<form *ngIf="showAddEntry" (ngSubmit)="onSubmit()">
+    <span> {{ validator_text }} </span>
+    <input type="text" name="submitter_name" [(ngModel)]="submitter_name" id="submitter-name" placeholder="Your Name">
+    <input type="email" name="email" [(ngModel)]="email" id="email" placeholder="Your Email">
+    <input type="text" name="phone_number" [(ngModel)]="phone_number" id="phone-number" placeholder="Your Phone Number">
+
+    <div>
+        <img [src]="url" title="Profile Picture" height="150px" width="150px" />
+        <input type="file" name="upload_photo" id="upload-photo" accept="image/*" (change)="onSelect($event)">
+        <input type="text" name="subject_name" [(ngModel)]="subject_name" id="subject-name" placeholder="Mom's Name">
+        <textarea name="description" [(ngModel)]="description" id="description"></textarea>
+    </div>
+    <input type="submit" value="Submit Entry">
+</form>
+
+
+<!-- <share-buttons theme="circles-dark"
+    [include]="['copy', 'facebook', 'email', 'messenger', 'mix', 'line', 'linkedin', 'pinterest', 'print', 'reddit', 'sms', 'telegram', 'tumblr', 'twitter', 'viber', 'vk', 'xing', 'whatsapp']"
+    [showIcon]="true" [showText]="false" url="https://rodrigo.kamada.com.br/" description="Angular Share Buttons"
+    twitterAccount="rodrigokamada" class="pt-5">
+</share-buttons> -->

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: hsl(219, 79%, 66%);
+
+    :hover {
+        color: hsl(219, 79%, 46%);
+        padding-bottom: .3rem;
+        border-bottom: 1px solid #2f2f2f;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 40rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}

@@ -1,0 +1,9 @@
+<div class="card">
+    <img src="{{ entry?.upload_photo }}" title="Profile Picture" height="150px" width="150px" />
+    <div class="contents">
+        <h3 class="title">{{ entry?.subject_name }}</h3>
+        <p class="description">{{ entry?.description }}</p>
+        <fa-icon [icon]="faheart" (click)="onVote(entry)" class="vote_icon"></fa-icon>
+        <span>{{ entry?.votes }}</span>
+    </div>
+</div>

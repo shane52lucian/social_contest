@@ -1,0 +1,13 @@
+<nav>
+    <a routerLink="/" class="logo">
+        <h1>{{ title }}</h1>
+    </a>
+
+    <div class="nav-links">
+        <a routerLink="/instructions"><span>Instructions</span></a>
+
+        <app-button *ngIf="hasRoute('/')" btnText="{{ showAddEntry ? 'Close' : 'Upload' }}"
+            (btnClick)="toggleEntryForm()"></app-button>
+        <app-add-entry (onAddEntry)="addNewEntry($event)"></app-add-entry>
+    </div>
+</nav>

@@ -1,0 +1,3 @@
+<div class="container">
+    <app-entry-card *ngFor="let entry of entries" [entry]="entry" (onVoteEntry)="addVote(entry)"></app-entry-card>
+</div>
